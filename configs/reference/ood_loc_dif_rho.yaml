@@ -1,0 +1,34 @@
+run:
+  job: train
+  eval_mode: default
+  experiment_directory: ./saved_experiments
+  save_model: true
+  gpu: 0
+  experiment_name: ugnn_ood_loc
+data:
+  split_no: 1
+  dataset: CoraML
+  root: ./data
+  ood_flag: true
+  train_samples_per_class: 0.05
+  val_samples_per_class: 0.15
+  test_samples_per_class: 0.8
+  split: random
+  ood_setting: poisoning
+  ood_type: leave_out_classes
+  ood_num_left_out_classes: -1
+  ood_leave_out_last_classes: true
+model:
+  seed: 42
+  init_no: 1
+  model_name: DiffusionRho
+  K: 10
+  alpha_teleport: 0.1
+  add_self_loops: true
+training:
+  epochs: 100000
+  stopping_mode: default
+  stopping_patience: 50
+  stopping_restore_best: true
+  stopping_metric: val_CE
+  stopping_minimize: true

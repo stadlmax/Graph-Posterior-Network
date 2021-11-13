@@ -1,0 +1,32 @@
+run:
+  job: evaluate
+  eval_mode: default
+  experiment_directory: ./saved_experiments
+  save_model: false
+  gpu: false
+  eval_experiment_name: ugnn_classification
+  experiment_name: ugnn_ood_edges
+data:
+  split_no: 1
+  dataset: CoraML
+  root: ./data
+  ood_flag: true
+  train_samples_per_class: 0.05
+  val_samples_per_class: 0.15
+  test_samples_per_class: 0.8
+  split: random
+  ood_setting: evasion
+  ood_type: random_attack_dice
+  ood_dataset_type: budget
+  ood_budget_per_graph: 0.2
+model:
+  seed: 42
+  init_no: 1
+  model_name: GGP
+training:
+  epochs: 100000
+  stopping_mode: default
+  stopping_patience: 50
+  stopping_restore_best: true
+  stopping_metric: val_CE
+  stopping_minimize: true

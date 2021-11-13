@@ -1,0 +1,15 @@
+.ipynb_checkpoints/
+.vscode
+**/__pycache__/**
+
+*.pyc
+
+saved_experiments/**
+!saved_experiments/README.md
+!saved_experiments/classification/GPN
+!saved_experiments/ood_loc/GPN
+
+data/**
+!data/README.md
+
+gpn.egg-info

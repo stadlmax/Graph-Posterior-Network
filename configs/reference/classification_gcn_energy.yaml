@@ -1,0 +1,33 @@
+run:
+  job: evaluate
+  eval_mode: energy_scoring
+  experiment_directory: ./saved_experiments
+  save_model: true
+  gpu: 0
+  experiment_name: ugnn_classification
+data:
+  split_no: 1
+  dataset: CoraML
+  root: ./data
+  ood_flag: false
+  train_samples_per_class: 0.05
+  val_samples_per_class: 0.15
+  test_samples_per_class: 0.8
+  split: random
+model:
+  seed: 42
+  init_no: 1
+  model_name: GCN
+  dim_hidden: 64
+  dropout_prob: 0.8
+  dropout_prob_adj: 0.0
+  temperature: 1.0
+training:
+  epochs: 100000
+  stopping_mode: default
+  stopping_patience: 50
+  stopping_restore_best: true
+  stopping_metric: val_CE
+  stopping_minimize: true
+  lr: 0.01
+  weight_decay: 0.0001
