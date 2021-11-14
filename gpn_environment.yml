@@ -120,11 +120,15 @@ dependencies:
   - pyqt=5.9.2=py38h05f1152_4
   - pyrsistent=0.17.3=py38h7b6447c_0
   - pysocks=1.7.1=py38_0
-  - python=3.8.3=hcff3b4d_2
+  - python=3.8.3=hcff3b4d_2c
   - python-dateutil=2.8.1=py_0
   - python_abi=3.8=1_cp38
   - pytorch=1.10.0=py3.8_cuda10.2_cudnn7.6.5_0
-  - pytorch-cluster=1.5.9=py38_torch_1.10.0_cu102 
+  - pytorch-cluster=1.5.9=py38_torch_1.10.0_cu102
+  - pyg=2.0.2=py38_torch_1.10.0_cu102
+  - pytorch-sparse=0.6.12=py38_torch_1.10.0_cu102
+  - pytorch-scatter=2.0.9=py38_torch_1.10.0_cu102
+  - pytorch-spline-conv=1.2.1=py38_torch_1.10.0_cu102
   - pytz=2020.1=py_0
   - pyyaml=5.3.1=py38h7b6447c_1
   - pyzmq=19.0.2=py38he6710b0_1

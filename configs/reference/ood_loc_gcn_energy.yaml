@@ -4,7 +4,7 @@ run:
   experiment_directory: ./saved_experiments
   save_model: true
   gpu: 0
-  experiment_name: ugnn_ood_loc
+  experiment_name: ood_loc
 data:
   split_no: 1
   dataset: CoraML

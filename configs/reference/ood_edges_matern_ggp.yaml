@@ -4,8 +4,8 @@ run:
   experiment_directory: ./saved_experiments
   save_model: false
   gpu: false
-  eval_experiment_name: ugnn_classification
-  experiment_name: ugnn_ood_edges
+  eval_experiment_name: classification
+  experiment_name: ood_edges
 data:
   split_no: 1
   dataset: CoraML

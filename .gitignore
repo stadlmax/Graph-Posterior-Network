@@ -6,8 +6,14 @@
 
 saved_experiments/**
 !saved_experiments/README.md
-!saved_experiments/classification/GPN
-!saved_experiments/ood_loc/GPN
+!saved_experiments/classification/
+!saved_experiments/classification/GPN.json
+!saved_experiments/classification/GPN/
+!saved_experiments/classification/GPN/**
+!saved_experiments/ood_loc/
+!saved_experiments/ood_loc/GPN.json
+!saved_experiments/ood_loc/GPN/
+!saved_experiments/ood_loc/GPN/**
 
 data/**
 !data/README.md
