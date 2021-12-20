@@ -107,7 +107,7 @@ class BayesianGCN(Model):
         return self.conv_1.log_prior + self.conv_2.log_prior
 
     def log_q(self) -> torch.Tensor:
-        return self.conv_2.log_q + self.conv_2.log_q
+        return self.conv_1.log_q + self.conv_2.log_q
 
     def loss(self, prediction: Prediction, data: Data) -> Dict[str, torch.Tensor]:
         return {**self.ELBO_loss(prediction, data)}

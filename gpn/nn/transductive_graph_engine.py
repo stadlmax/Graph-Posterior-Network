@@ -206,7 +206,7 @@ class TransductiveGraphEngine(Engine):
         ood_results = self._aggregate_metrics_ood(evals_id, evals_ood, metrics_ood)
 
         for s in self.splits:
-            results[s] = {**resultſ[s], **ood_results[s]}
+            results[s] = {**results[s], **ood_results[s]}
 
         return results
 
