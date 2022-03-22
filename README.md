@@ -6,7 +6,7 @@ This is the official code repository to the paper
 Maximilian Stadler, Bertrand Charpentier, Simon Geisler, Daniel Zügner, Stephan Günnemann<br>
 Conference on Neural Information Processing Systems (NeurIPS) 2021.
 
-[[Paper](https://arxiv.org/pdf/2110.14012.pdf)]|[Video - coming soon]()]
+[[Paper](https://arxiv.org/pdf/2110.14012.pdf)]|[Video](https://www.youtube.com/watch?v=HrM-fVPqEN0)]
 
 ![Diagram](uncertainty-axioms.png?raw=true "Diagram")
 
